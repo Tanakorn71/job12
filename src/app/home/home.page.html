@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="purple">
+    <ion-title>
+      Component
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-segment color="purple" value="all">
+  <ion-segment-button value="select">
+    <ion-label>select</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="toggel">
+    <ion-label>toggle</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
+<ion-searchbar color="dark"></ion-searchbar>
+
+<ion-list>
+  <ion-item>
+    <ion-select aria-label="Fruit" interface="popover" placeholder="เมนู">
+      <ion-select-option value="สินค้า">สินค้า</ion-select-option>
+      <ion-select-option value="คิวอาร์โค้ด">คิวอาร์โค้ด</ion-select-option>
+      <ion-select-option value="พูดคุย">พูดคุย</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-button color="purple" expand="block" (click)="presentToast('middle')">เจ้าของร้าน</ion-button>
+
+<ion-toggle [enableOnOffLabels]="true">Mode Moon</ion-toggle>
+
+<ion-content [fullscreen]="true">
+
+</ion-content>
+
+<ion-fab slot="fixed" vertical="bottom" horizontal="end">
+  <ion-fab-button color="purple">
+    <ion-icon name="chevron-up-circle"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button>
+      <ion-icon name="bag-handle-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon name="qr-code-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button>
+      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
+
