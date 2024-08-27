@@ -6,32 +6,32 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-segment color="purple" value="all">
-  <ion-segment-button value="select">
-    <ion-label>select</ion-label>
-  </ion-segment-button>
-  <ion-segment-button value="toggel">
-    <ion-label>toggle</ion-label>
-  </ion-segment-button>
-</ion-segment>
-
-<ion-searchbar color="dark"></ion-searchbar>
-
-<ion-list>
-  <ion-item>
-    <ion-select aria-label="Fruit" interface="popover" placeholder="เมนู">
-      <ion-select-option value="สินค้า">สินค้า</ion-select-option>
-      <ion-select-option value="คิวอาร์โค้ด">คิวอาร์โค้ด</ion-select-option>
-      <ion-select-option value="พูดคุย">พูดคุย</ion-select-option>
-    </ion-select>
-  </ion-item>
-</ion-list>
-
-<ion-button color="purple" expand="block" (click)="presentToast('middle')">เจ้าของร้าน</ion-button>
-
-<ion-toggle [enableOnOffLabels]="true">Mode Moon</ion-toggle>
-
 <ion-content [fullscreen]="true">
+
+  <ion-segment color="purple" value="all">
+    <ion-segment-button value="select">
+      <ion-label>select</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="toggel">
+      <ion-label>toggle</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-searchbar color="dark"></ion-searchbar>
+
+  <ion-list>
+    <ion-item>
+      <ion-select aria-label="Fruit" interface="popover" placeholder="เมนู">
+        <ion-select-option value="สินค้า">สินค้า</ion-select-option>
+        <ion-select-option value="คิวอาร์โค้ด">คิวอาร์โค้ด</ion-select-option>
+        <ion-select-option value="พูดคุย">พูดคุย</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-button color="purple" expand="block" (click)="presentToast('middle')">เจ้าของร้าน</ion-button>
+
+  <ion-toggle [enableOnOffLabels]="true">Mode Moon</ion-toggle>
 
 </ion-content>
 
